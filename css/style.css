@@ -20,9 +20,7 @@ body.dark
 body{
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins' sans-serif;
-
-
+    font-family: 'Poppins', sans-serif;
 }
 
 *
@@ -480,7 +478,7 @@ h3.my-profession
 .about .about-content .about-text h3
 {
     font-size: 24px;
-    font-style: Bold;
+    font-weight: Bold;
     font-style: normal;
     margin-bottom: 15px;
     font-weight: 700;
@@ -716,7 +714,7 @@ h3.my-profession
 .favorite .favorite-content .favorite-text h3
 {
     font-size: 24px;
-    font-style: Bold;
+    font-weight: Bold;
     font-style: normal;
     margin-bottom: 15px;
     font-weight: 700;
@@ -881,10 +879,8 @@ h3.my-profession
 .favorite .favorite-content-creator {
     
     margin-top: 1px;
-    font-style:bold ;
-    
+    font-weight: Bold;
     border-radius: 5px;
-    
     overflow: hidden;
     width: 150px;
     padding: 1px;
