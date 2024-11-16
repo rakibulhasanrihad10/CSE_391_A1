@@ -690,7 +690,7 @@ h3.my-profession
 .about .about-content .timeline .timeline-text
 {
     line-height: 25px;
-    font-size: 16px;
+    font-size: 12px;
     text-align: justify;
     color: var(--text-black-700);
 }
@@ -882,7 +882,7 @@ h3.my-profession
     font-weight: Bold;
     border-radius: 5px;
     overflow: hidden;
-    width: 150px;
+    width: 200px;
     padding: 1px;
 }
 
