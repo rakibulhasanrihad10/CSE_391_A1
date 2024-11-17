@@ -1,11 +1,11 @@
-// ============= Navigation and Sections =============
+
 const nav = document.querySelector(".nav");
 const navList = nav ? nav.querySelectorAll("li") : [];
 const totalNavList = navList.length;
 const allSection = document.querySelectorAll(".section");
 const totalSection = allSection.length;
 
-// ============= Add event listeners to navigation links =============
+
 if (navList.length > 0) {
     for (let i = 0; i < totalNavList; i++) {
         const a = navList[i].querySelector("a");
@@ -26,21 +26,21 @@ if (navList.length > 0) {
     }
 }
 
-// ============= Remove back section class from all sections =============
+
 function removeBackSection() {
     for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove("back-section");
     }
 }
 
-// ============= Add back section class to a specific section =============
+
 function addBackSection(num) {
     if (allSection[num]) {
         allSection[num].classList.add("back-section");
     }
 }
 
-// ============= Show the specified section based on the clicked link =============
+
 function showSection(element) {
     for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove("active");
@@ -52,7 +52,7 @@ function showSection(element) {
     }
 }
 
-// ============= Update navigation active class based on section =============
+
 function updateNav(element) {
     for (let i = 0; i < totalNavList; i++) {
         navList[i].querySelector("a").classList.remove("active");
@@ -65,7 +65,7 @@ function updateNav(element) {
 
 
 
-// ============= Sidebar toggle functionality for smaller screens =============
+
 const navTogglerBtn = document.querySelector(".nav-toggler");
 const aside = document.querySelector(".aside");
 
