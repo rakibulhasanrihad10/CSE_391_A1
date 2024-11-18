@@ -108,5 +108,5 @@ if (lastModifiedElement) {
 const pageUrl = window.location.href;
 const pageUrlElement = document.getElementById("page-url");
 if (pageUrlElement) {
-    pageUrlElement.textContent = `Current Page URL: ${pageUrl}`;
+    pageUrlElement.textContent = `Current Page at: ${pageUrl}`;
 }

@@ -20,7 +20,9 @@ body.dark
 body{
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins' sans-serif;
+
+
 }
 
 *
@@ -77,7 +79,7 @@ ul
 {
     z-index: 2;
     opacity: 1;
-    /* animation: slideSection 1s ease;     */
+    animation: slideSection 1s ease;    
 }
 @keyframes slideSection 
 {
@@ -334,6 +336,7 @@ html
 .aside .nav
 {
     margin-top: 50px;
+    align-items: center;
 
 }
 
@@ -347,6 +350,7 @@ html
 {
     font-size: 20px;
     font-weight: 600;
+    /* text-align: right; */
     display: block;
     border-bottom: 1px solid var(--bg-black-50);
     color: var(--text-black-900);
@@ -381,6 +385,7 @@ html
 {
     flex: 0 0 60%;
     max-width: 60%;
+    text-align: justify;
 
 }
 
@@ -389,7 +394,6 @@ h3.hello
 {
     font-size: 28px;
     margin: 15px 0;
-    text-align: center;
 }
 h3.hello span
 {
@@ -397,13 +401,11 @@ h3.hello span
     font-size: 40px;
     font-weight: 700;
     color: var(--skin-color);
-    text-align: center;
 }
 h3.my-profession
 {
     font-size: 30px;
     margin: 15px 0 ;
-    
 }
 
 .typing
@@ -413,11 +415,9 @@ h3.my-profession
 
 .home-info p
 {
-    
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700);
-    text-align: justify;
 }
 .home .home-img
 {
@@ -478,7 +478,7 @@ h3.my-profession
 .about .about-content .about-text h3
 {
     font-size: 24px;
-    font-weight: Bold;
+    font-style: Bold;
     font-style: normal;
     margin-bottom: 15px;
     font-weight: 700;
@@ -494,7 +494,7 @@ h3.my-profession
 
 .about .about-content .about-text p
 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
     color: var(--text-black-700);
 
@@ -516,7 +516,7 @@ h3.my-profession
 {
     font-weight: 600;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
 }
@@ -690,7 +690,7 @@ h3.my-profession
 .about .about-content .timeline .timeline-text
 {
     line-height: 25px;
-    font-size: 12px;
+    font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
 }
@@ -714,7 +714,7 @@ h3.my-profession
 .favorite .favorite-content .favorite-text h3
 {
     font-size: 24px;
-    font-weight: Bold;
+    font-style: Bold;
     font-style: normal;
     margin-bottom: 15px;
     font-weight: 700;
@@ -879,10 +879,12 @@ h3.my-profession
 .favorite .favorite-content-creator {
     
     margin-top: 1px;
-    font-weight: Bold;
+    font-style:bold ;
+    
     border-radius: 5px;
+    
     overflow: hidden;
-    width: 200px;
+    width: 180px;
     padding: 1px;
 }
 
@@ -1031,13 +1033,6 @@ h3.my-profession
 
 
 }
-.portfolio .portfolio-item-inner .portfolio-img p
-{
-    
-    text-align: center;
-    color: var(--text-black-700);
-    
-}
 
 /* contact */
 .contact-title
@@ -1154,25 +1149,97 @@ h3.my-profession
 
 
 
-/* Additional styling for the #pagelm text if needed */
-#pagelm {
+
+/* #pagelm {
     font-size: 16px;
     color: var(--text-black-700);
-}
+} */
 
 
 
 .footer-info {
-    margin-bottom: 20px;
-    padding: 15px;
+    
+    margin-top: 10px;
+    padding: 10px;
     text-align: center;
-    /* background-color: var(--bg-black-100); */
     color: var(--text-black-900);
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 14px;
+    background-color: var(--bg-black-50);
+    
+    
+    position: relative; 
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2); 
+    
+    backdrop-filter: blur(10px); 
+    
+  
 
 }
 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+  }
+  
+  .social-link {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-black-100);
+    border-radius: 10px;
+    width: auto;
+    height: 65px;
+    
+    
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.3);
+  }
+
+  .linkedin {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174857.png');
+  }
+
+  .github {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/25/25231.png');
+  }
+  
+  .discord {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111370.png'); 
+  }
+
+  .reddit {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111589.png'); 
+  }
+  
+  .facebook {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733547.png');
+  }
+  
+  .instagram {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
+  }
+  
 
 
 
@@ -1256,9 +1323,28 @@ h3.my-profession
     .favorite .favorite-content .favorite-links,
     .favorite .favorite-content .quote,
     .favorite .favorite-content .favorite-table
+
     {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    
+    .social-link {
+            flex-wrap: wrap; 
+            justify-content: center;
+            height: 50px;
+    }
+    .social-link .icon {
+        width: 30px;
+        height: 30px; 
+    }
+    .contact-title
+    {
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 30px;
+    }
 }
+
 
